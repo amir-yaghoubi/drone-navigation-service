@@ -17,7 +17,7 @@ Useful commands are available in `Makefile`, so check that out.
 You can configure this service by providing following enviroment variables:
 ```bash
 
-GIN_MODE=release
+PRODUCTION=true
 PORT=8080
 SECTOR_ID=1
 

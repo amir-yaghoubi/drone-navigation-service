@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  dns:
+    container_name: drone_navigation_service
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      GIN_MODE: release
+      PORT: 8080
+      SECTION_ID: 1

@@ -1,0 +1,84 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Drone Navigation Service API",
+        "contact": {
+            "name": "Amirhossein Yaghoubi",
+            "email": "amir.yaghoubi.dev@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "basePath": "/api/",
+    "paths": {
+        "/": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "dns"
+                ],
+                "summary": "dns request",
+                "parameters": [
+                    {
+                        "description": "xx",
+                        "name": "default",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/http.DnsRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/http.DnsResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "http.DnsRequest": {
+            "type": "object",
+            "required": [
+                "vel",
+                "x",
+                "y",
+                "z"
+            ],
+            "properties": {
+                "vel": {
+                    "type": "string",
+                    "default": "20.0"
+                },
+                "x": {
+                    "type": "string",
+                    "default": "123.12"
+                },
+                "y": {
+                    "type": "string",
+                    "default": "456.56"
+                },
+                "z": {
+                    "type": "string",
+                    "default": "789.89"
+                }
+            }
+        },
+        "http.DnsResponse": {
+            "type": "object",
+            "properties": {
+                "loc": {
+                    "type": "number"
+                }
+            }
+        }
+    }
+}

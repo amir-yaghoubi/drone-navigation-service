@@ -1,0 +1,56 @@
+basePath: /api/
+definitions:
+  http.DnsRequest:
+    properties:
+      vel:
+        default: "20.0"
+        type: string
+      x:
+        default: "123.12"
+        type: string
+      "y":
+        default: "456.56"
+        type: string
+      z:
+        default: "789.89"
+        type: string
+    required:
+    - vel
+    - x
+    - "y"
+    - z
+    type: object
+  http.DnsResponse:
+    properties:
+      loc:
+        type: number
+    type: object
+info:
+  contact:
+    email: amir.yaghoubi.dev@gmail.com
+    name: Amirhossein Yaghoubi
+  title: Drone Navigation Service API
+  version: "1.0"
+paths:
+  /:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: xx
+        in: body
+        name: default
+        required: true
+        schema:
+          $ref: '#/definitions/http.DnsRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/http.DnsResponse'
+      summary: dns request
+      tags:
+      - dns
+swagger: "2.0"

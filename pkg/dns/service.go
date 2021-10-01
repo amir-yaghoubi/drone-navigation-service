@@ -6,8 +6,8 @@ import (
 )
 
 // Creates a new instance of DroneNavigationService
-func NewDNS(sectionID int) *DroneNavigationService {
-	return &DroneNavigationService{sectionID}
+func NewDNS(sectorID int) *DroneNavigationService {
+	return &DroneNavigationService{sectorID}
 }
 
 type DroneNavigationService struct {

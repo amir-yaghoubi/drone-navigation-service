@@ -60,7 +60,7 @@ func main() {
 	signal.Notify(shutdownSignal, syscall.SIGINT, syscall.SIGTERM)
 
 	go func() {
-		log.Printf("Starting DNS Service secID:%d on port: %d\n", cfg.SectionID, cfg.Port)
+		log.Printf("Starting DNS Service secID:%d on port: %d\n", cfg.SectorID, cfg.Port)
 		if err := httpServer.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
 			log.Fatalf("cannot listen %v", err)
 		}

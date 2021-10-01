@@ -43,7 +43,7 @@ func main() {
 	router := gin.Default()
 	apiRouter := router.Group("/api")
 
-	svc := dns.NewDNS(cfg.SectionID)
+	svc := dns.NewDNS(cfg.SectorID)
 	handler := handler.NewHandler(apiRouter, svc)
 
 	handler.Setup()

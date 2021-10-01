@@ -11,7 +11,7 @@ func NewDNS(sectionID int) *DroneNavigationService {
 }
 
 type DroneNavigationService struct {
-	sectionID int
+	sectorID int
 }
 
 func (dns *DroneNavigationService) CalculateLocation(ctx context.Context, req DnsRequest) (*DnsResponse, error) {
@@ -19,7 +19,7 @@ func (dns *DroneNavigationService) CalculateLocation(ctx context.Context, req Dn
 		return nil, err
 	}
 
-	secID := float64(dns.sectionID)
+	secID := float64(dns.sectorID)
 	loc := (req.X * secID) + (req.Y * secID) + (req.Z * secID) + req.Velocity
 
 	// reducing precision to 2 floating points

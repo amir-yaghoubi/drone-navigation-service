@@ -19,7 +19,7 @@ You can configure this service by providing following enviroment variables:
 
 GIN_MODE=release
 PORT=8080
-SECTION_ID=1
+SECTOR_ID=1
 
 ```
 

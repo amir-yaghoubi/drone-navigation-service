@@ -10,7 +10,6 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     env:
-      GOFLAGS: -mod=vendor
       GOPROXY: "off"
 
     steps:

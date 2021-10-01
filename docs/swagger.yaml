@@ -37,7 +37,7 @@ paths:
       consumes:
       - application/json
       parameters:
-      - description: xx
+      - description: DNS Request Body
         in: body
         name: default
         required: true
@@ -50,7 +50,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/http.DnsResponse'
-      summary: dns request
+      summary: DNS request
       tags:
       - dns
 swagger: "2.0"

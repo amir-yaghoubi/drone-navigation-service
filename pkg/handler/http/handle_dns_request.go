@@ -6,12 +6,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// @Summary dns request
-// @Description: Description
+// @Summary DNS request
+// @Description: Calculates datalake location
 // @Tags dns
 // @Accept json
 // @Produce json
-// @Param default body DnsRequest true "xx"
+// @Param default body DnsRequest true "DNS Request Body"
 // @Success 200 {object} DnsResponse
 // @Router / [post]
 func (h *DroneNavigationHandler) HandleDNSRequest(g *gin.Context) {

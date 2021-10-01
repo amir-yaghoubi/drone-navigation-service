@@ -37,10 +37,10 @@ var doc = `{
                 "tags": [
                     "dns"
                 ],
-                "summary": "dns request",
+                "summary": "DNS request",
                 "parameters": [
                     {
-                        "description": "xx",
+                        "description": "DNS Request Body",
                         "name": "default",
                         "in": "body",
                         "required": true,

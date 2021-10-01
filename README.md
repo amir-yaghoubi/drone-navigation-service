@@ -1,7 +1,7 @@
 
 
 # Drone Navigation Service
-[![Tests](https://github.com/amir-yaghoubi/drone-navigation-service/actions/workflows/tests.yml/badge.svg?event=push)](https://github.com/amir-yaghoubi/drone-navigation-service/actions/workflows/tests.yml)
+[![Tests](https://github.com/amir-yaghoubi/drone-navigation-service/actions/workflows/tests.yml/badge.svg)](https://github.com/amir-yaghoubi/drone-navigation-service/actions/workflows/tests.yml)
 
 Simple service that will solve imaginary drones nagivation problem.
 
